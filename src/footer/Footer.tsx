@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <footer className="bg-gray-950">
-            <div className="max-w-[1200px] m-auto mt-24">
+            <div className="container mt-24">
                 <div className="text-white flex gap-4 pt-24 border-b-2 border-gray-600 pb-16">
                     <svg xmlns="http://www.w3.org/2000/svg" width="135" height="17" viewBox="0 0 135 17" fill="none"
                         className="hover:cursor-pointer duration-300">
@@ -18,25 +18,27 @@ export const Footer = () => {
                     </svg>
                     <span className="text-gray-600">© 2018 Noiceland™, all rights reserved</span>
                 </div>
-                <div className="flex text-white flex-col text-sm">
-                    <div className="flex items-end justify-between text-sm pt-16">
-                        <ul className="flex flex-col gap-3">
-                            <li className="text-xs text-gray-600">Categories</li>
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Animation</li>
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Interactive design</li>
-                        </ul>
-                        <ul className="flex flex-col gap-3">
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Architecture</li>
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Miscellaneous</li>
-                        </ul>
-                        <ul className="flex flex-col gap-3">
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Graphic design</li>
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Photography</li>
-                        </ul>
-                        <ul className="flex flex-col gap-3">
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Illustration</li>
-                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Product design</li>
-                        </ul>
+                <div className="flex items-center lg:items-start text-white flex-col text-center text-sm">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-end gap-16 justify-between text-sm pt-16 w-full">
+                        <div className="flex justify-between items-end gap-5 w-full">
+                            <ul className="flex flex-col items-center lg:items-start gap-5">
+                                <li className="text-xs text-gray-600">Categories</li>
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Animation</li>
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Interactive design</li>
+                            </ul>
+                            <ul className="flex flex-col items-center lg:items-start gap-5 mb-5 sm:mb-0">
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Architecture</li>
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Miscellaneous</li>
+                            </ul>
+                            <ul className="flex flex-col items-center lg:items-start gap-5">
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Graphic design</li>
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Photography</li>
+                            </ul>
+                            <ul className="flex flex-col items-center lg:items-start gap-5">
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Illustration</li>
+                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Product design</li>
+                            </ul>
+                        </div>
                         <div>
                             <h3 className="text-xs text-gray-600">
                                 Subscribe to newsletter
@@ -49,33 +51,30 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
-
-                    <div>
-                        <div className="flex justify-between w-2/4 pt-16 pb-20">
-                            <ul className="flex flex-col gap-3">
-                                <li className="text-xs text-gray-600">
-                                    Information</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">About</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">contact</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">learns</li>
-                            </ul>
-                            <ul className="flex flex-col gap-3">
-                                <li className="text-xs text-gray-600">Follow
-                                    us</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Instagram</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Facebook</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Twitter</li>
-                            </ul>
-                            <ul className="flex flex-col gap-3">
-                                <li className="text-xs text-gray-600">Template
-                                </li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Image License Info</li>
-                                <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Powered by Webflow</li>
-                            </ul>
-                        </div>
+                    <div className="flex flex-row items-center lg:items-start justify-between w-full lg:w-2/4 pt-16 pb-20">
+                        <ul className="flex flex-col items-center lg:items-start gap-5">
+                            <li className="text-xs text-gray-600">
+                                Information</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">About</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">contact</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">learns</li>
+                        </ul>
+                        <ul className="flex flex-col items-center lg:items-start gap-5">
+                            <li className="text-xs text-gray-600">Follow
+                                us</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Instagram</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Facebook</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Twitter</li>
+                        </ul>
+                        <ul className="flex flex-col items-center lg:items-start gap-5">
+                            <li className="text-xs text-gray-600">Template
+                            </li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Image License Info</li>
+                            <li className="hover:text-blue-500 hover:cursor-pointer duration-300">Powered by Webflow</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     )
 }
